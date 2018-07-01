@@ -28,7 +28,7 @@ function pickLocation() {
 function draw() {
     background(51);
 
-    if(s.eat(food)){
+    if(s.eat(food1) || s.eat(food2)){
         pickLocation();
     }
 
