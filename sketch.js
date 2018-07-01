@@ -1,8 +1,5 @@
 var s;
 var scl = 20;
-var cols = floor(windowWidth/scl);
-var rows = floor(windowHeight/scl);
-
 var food1;
 var food2;
 
@@ -20,11 +17,15 @@ function mousePressed() {
 }
 
 function pickLocation1() {
+    var cols = floor(windowWidth/scl);
+    var rows = floor(windowHeight/scl);
     var food1 = createVector(floor(random(cols)), floor(random(rows)));
     food1.mult(scl);
 }
 
 function pickLocation2() {
+    var cols = floor(windowWidth/scl);
+    var rows = floor(windowHeight/scl);
     var food2 = createVector(floor(random(cols)), floor(random(rows)));
     food2.mult(scl);
 }
