@@ -38,8 +38,8 @@ function Snake() {
             var d = dist(this.x, this.y, pos.x, pos.y);
             if (d < 1) {
                 console.log('YOU DIED');
-                this.x = (width / 2) - scl;
-                this.y = (height / 2) - scl;
+                this.x = (windoWidth / 2) - scl;
+                this.y = (windowHeight / 2) - scl;
                 this.total = 0;
                 this.tail = [];
             }
