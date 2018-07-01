@@ -7,7 +7,8 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     s = new Snake();
     frameRate(13);
-    pickLocation();
+    pickLocation1();
+    pickLocation2();
 }
 
 function mousePressed() {
