@@ -37,7 +37,8 @@ function draw() {
     s.show();
 
     fill(255, 0, 100);
-    rect(food.x, food.y, scl, scl);
+    rect(food1.x, food1.y, scl, scl);
+    rect(food2.x, food2.y, scl, scl);
 }
 
 function keyPressed() {
