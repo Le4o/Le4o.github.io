@@ -21,7 +21,8 @@ function pickLocation() {
     var rows = floor(windowHeight/scl);
     food1 = createVector(floor(random(cols)), floor(random(rows)));
     food2 = createVector(floor(random(cols)), floor(random(rows)));
-    food.mult(scl);
+    food1.mult(scl);
+    food2.mult(scl);
 }
 
 function draw() {
