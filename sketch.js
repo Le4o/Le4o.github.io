@@ -1,6 +1,7 @@
 var s;
 var scl = 20;
-var food;
+var food1;
+var food2;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -18,7 +19,8 @@ function mousePressed() {
 function pickLocation() {
     var cols = floor(windowWidth/scl);
     var rows = floor(windowHeight/scl);
-    food = createVector(floor(random(cols)), floor(random(rows)));
+    food1 = createVector(floor(random(cols)), floor(random(rows)));
+    food2 = createVector(floor(random(cols)), floor(random(rows)));
     food.mult(scl);
 }
 
