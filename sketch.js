@@ -3,7 +3,7 @@ var scl = 20;
 var food;
 
 function setup() {
-    createCanvas(600, 600);
+    createCanvas(windowWidth, windowHeight);
     s = new Snake();
     frameRate(13);
     pickLocation();
@@ -16,8 +16,8 @@ function mousePressed() {
 }
 
 function pickLocation() {
-    var cols = floor(width/scl);
-    var rows = floor(height/scl);
+    var cols = floor(windowWidth/scl);
+    var rows = floor(windowHeight/scl);
     food = createVector(floor(random(cols)), floor(random(rows)));
     food.mult(scl);
 }
